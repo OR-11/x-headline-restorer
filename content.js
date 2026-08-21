@@ -19,6 +19,10 @@ function abbreviateHrefText(text, fullUrl) {
   return text.length > 30 ? `${text.slice(0, 25)}...` : text;
 }
 
+function abbreviateTitleText(text) {
+  return text.length > 80 ? `${text.slice(0, 50)}...` : text;
+}
+
 function createPopupMessage(fullUrl) {
   const fragment = document.createDocumentFragment();
   fragment.append("URL全文：");
@@ -149,7 +153,7 @@ function addDetails(anchor) {
 
   const ariaLabel = document.createElement("div");
   ariaLabel.className = "x-headline-link-details__aria-label";
-  ariaLabel.textContent = domainAndTitle.split(" ").slice(1).join(" ");
+  ariaLabel.textContent = abbreviateTitleText(domainAndTitle.split(" ").slice(1).join(" "));
 
   details.append(hrefRow, ariaLabel);
   anchor.appendChild(details);
