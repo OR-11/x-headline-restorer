@@ -3,6 +3,7 @@ Xの画像の仮面をかぶったリンクの下にタイトルとURLを追加�
 
 # 諸々
 Codexを使用。  
+htmlファイルはX.comのhtmlからとってきたほぼそのままのものです  
 以下AIによる生成
 
 # X Headline Link Details
