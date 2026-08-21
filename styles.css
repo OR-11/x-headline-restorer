@@ -1,0 +1,29 @@
+.x-headline-link-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.x-headline-link-details__aria-label {
+  color: var(--cpft-text-primary);
+}
+
+.x-headline-link-details__href {
+  color: var(--cpft-text-secondary);
+  min-width: 0;
+  margin-bottom: 2px;
+}
+
+.x-headline-link-details__href-row {
+  align-self: stretch;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.x-headline-link-details__info-icon {
+  cursor: pointer;
+  flex: 0 0 auto;
+  height: 1em;
+  margin-left: auto;
+  width: 1em;
+}
