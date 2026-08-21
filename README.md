@@ -3,7 +3,7 @@ Xの画像の仮面をかぶったリンクの下にタイトルとURLを追加�
   
 ## 見本
 これが  
-![見本画像1](https://github.com/OR-11/x-headline-restorer/blob/main/%E8%A6%8B%E6%9C%AC2.png)
+![見本画像1](https://github.com/OR-11/x-headline-restorer/blob/main/%E8%A6%8B%E6%9C%AC2.png)  
 こうなる  
 ![見本画像2](https://github.com/OR-11/x-headline-restorer/blob/main/%E8%A6%8B%E6%9C%AC1.png)
 # 諸々
