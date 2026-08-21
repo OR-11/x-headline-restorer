@@ -1,6 +1,11 @@
 # Feature
 Xの画像の仮面をかぶったリンクの下にタイトルとURLを追加する拡張です。手抜き実装のため、定数秒待機の使用やバイブコーディング90%によって構成されています。
 
+# 諸々
+Codexを使用。  
+htmlファイルはX.comのhtmlからとってきたほぼそのままのものです  
+以下AIによる生成
+
 # X Headline Link Details
 
 Chromium 拡張（Manifest V3）です。`x.com` 上の
