@@ -19,7 +19,7 @@ Chromium 拡張（Manifest V3）です。`x.com` 上の
 `href` の値を、それぞれ別の子 `div` として追加します。表示順は `href`、
 `aria-label` です。`href` 要素にはまず `aria-label.split(' ')[0]` を表示し、
 短縮URLから取得したHTMLの `title` を取得できた場合は、その値へ差し替えます。
-`aria-label` 要素には `aria-label.split(' ').split(" ").slice(1).join(" ")` を表示します。
+`aria-label` 要素には `aria-label.split(" ").slice(1).join(" ")` を表示します。
 追加する親 `div` にはインラインで `padding: 14px` を適用します。
 子要素には専用クラスを付与し、CSSで縦に並べ、`aria-label` と `href` に
 それぞれ指定の色を適用します。
