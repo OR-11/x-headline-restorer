@@ -28,6 +28,7 @@ function createPopupMessage(fullUrl) {
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.textContent = fullUrl;
+  link.style.color = "rgb(29, 155, 240)";
   fragment.append(link);
 
   const warning = document.createElement("span");
