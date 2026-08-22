@@ -16,7 +16,7 @@ function abbreviateHrefText(text, fullUrl) {
     // The normal text-length rule still applies when the URL is malformed.
   }
 
-  return text.length > 30 ? `${text.slice(0, 25)}...` : text;
+  return text.length > 50 ? `${text.slice(0, 43)}...` : text;
 }
 
 function abbreviateTitleText(text) {
