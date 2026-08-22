@@ -27,3 +27,13 @@
   margin-left: auto;
   width: 1em;
 }
+
+.hrefTextWrapper {
+  height: 1.5em;
+  max-height: 1.8em;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-box-trim: trim-start;
+}

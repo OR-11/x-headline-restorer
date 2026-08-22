@@ -1,7 +1,7 @@
 "use strict";
 
 const TARGET_SELECTOR = 'a[data-headline-restored="true"]';
-const ORIGINAL_HEADLINE_SELECTOR = '[class="cpft_link_headline r-37j5jr"]';
+const ORIGINAL_HEADLINE_SELECTOR = '[class~="cpft_link_headline"]';
 const INSERTED_MARKER = "data-x-headline-link-details";
 const POPUP_MARKER = "data-x-headline-url-popup";
 
@@ -16,7 +16,7 @@ function abbreviateHrefText(text, fullUrl) {
     // The normal text-length rule still applies when the URL is malformed.
   }
 
-  return text.length > 50 ? `${text.slice(0, 43)}...` : text;
+  return text;// .length > 50 ? `${text.slice(0, 43)}...` : text;
 }
 
 function abbreviateTitleText(text) {
@@ -138,14 +138,20 @@ function addDetails(anchor) {
   details.setAttribute(INSERTED_MARKER, "true");
   details.className = "x-headline-link-details";
   details.style.padding = "14px";
+  details.id = "chromeExtensionGeneratedURLEX";
 
   const domainAndTitle = anchor.getAttribute("aria-label") || "";
   const shortUrl = anchor.getAttribute("href") || "";
 
   const href = document.createElement("div");
-  href.className = "x-headline-link-details__href";
-  href.textContent = abbreviateHrefText(domainAndTitle.split(" ")[0], shortUrl);
+  href.className = "x-headline-link-details__href hrefTextWrapper";
+  href.id = "chromeExtensionGeneratedURLEX";
   href.dataset.fullUrl = shortUrl;
+
+  // Somehow this will be changed to text content.
+  const hrefContent = document.createElement("span");
+  hrefContent.textContent = abbreviateHrefText(domainAndTitle.split(" ")[0], shortUrl);
+  href.appendChild(hrefContent);
 
   const hrefRow = document.createElement("div");
   hrefRow.className = "x-headline-link-details__href-row";
