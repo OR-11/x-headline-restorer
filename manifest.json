@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "X Headline Link Details",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Adds aria-label and href details to restored headline links on x.com.",
   "host_permissions": ["<all_urls>"],
   "web_accessible_resources": [
